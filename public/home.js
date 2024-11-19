@@ -7,7 +7,7 @@ async function fetchUserInfo() {
     return;
   }
 
-  const res = await fetch("http://localhost:3000/api/userinfo", {
+  const res = await fetch("https://project-one-3.onrender.com/api/userinfo", {
     headers: { Authorization: token },
   });
 
