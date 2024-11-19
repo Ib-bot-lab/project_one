@@ -110,7 +110,7 @@
           return;
         }
 
-        const res = await fetch("http://localhost:3000/api/userinfo", {
+        const res = await fetch("https://project-one-3.onrender.com/api/userinfo", {
           headers: { Authorization: token },
         });
 
@@ -132,7 +132,7 @@
 
       async function fetchTasks(search = "") {
         const res = await fetch(
-          `http://localhost:3000/api/tasks?search=${search}`,
+          `https://project-one-3.onrender.com/api/tasks?search=${search}`,
           {
             headers: { Authorization: token },
           }
@@ -180,7 +180,7 @@
 
         const taskData = { title, description, deadline, priority };
 
-        const res = await fetch("http://localhost:3000/api/tasks", {
+        const res = await fetch("https://project-one-3.onrender.com/api/tasks", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -232,7 +232,7 @@
 
         const taskData = { title, description, deadline, priority };
 
-        const res = await fetch(`http://localhost:3000/api/tasks/${taskId}`, {
+        const res = await fetch(`https://project-one-3.onrender.com/api/tasks/${taskId}`, {
           method: "PUT",
           headers: {
             "Content-Type": "application/json",
@@ -259,7 +259,7 @@
       }
 
       async function deleteTask(taskId) {
-        await fetch(`http://localhost:3000/api/tasks/${taskId}`, {
+        await fetch(`https://project-one-3.onrender.com/api/tasks/${taskId}`, {
           method: "DELETE",
           headers: { Authorization: token },
         });
