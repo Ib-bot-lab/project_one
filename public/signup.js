@@ -6,7 +6,7 @@ signupForm.addEventListener("submit", async (e) => {
   const password = document.getElementById("signupPassword").value;
 
   try {
-    const res = await fetch("http://localhost:3000/api/register", {
+    const res = await fetch("https://project-one-3.onrender.com/api/register", {
       // Full URL with backend port
       method: "POST",
       headers: { "Content-Type": "application/json" },
